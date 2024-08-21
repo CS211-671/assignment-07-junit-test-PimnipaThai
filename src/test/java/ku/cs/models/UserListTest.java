@@ -11,7 +11,17 @@ class UserListTest {
     @DisplayName("User should be found in UserList")
     public void testUserListFindUser() {
         // TODO: add 3 users to UserList
+        Student s = new Student("6xxxxxxxx", "StudentTest");
+        s.addScore(45.15);
+        assertEquals(45.15, s.getScore());
 
+        Student s2 = new Student("6xxxxxxxx", "StudentTest");
+        s2.addScore(45.15);
+        assertEquals(45.15, s2.getScore());
+
+        Student s3 = new Student("6xxxxxxxx", "StudentTest");
+        s3.addScore(45.15);
+        assertEquals(45.15, s3.getScore()
         // TODO: find one of them
 
         // TODO: assert that UserList found User
